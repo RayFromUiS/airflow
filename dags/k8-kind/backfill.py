@@ -7,7 +7,7 @@ default_args = {
     'start_date': datetime(2019, 1, 1),
     'owner': 'Airflow'
 }
-
+## add the test line to check the updating from here
 with DAG(dag_id='backfill', schedule_interval="0 0 * * *", default_args=default_args, catchup=True) as dag:
     
     # Task 1
