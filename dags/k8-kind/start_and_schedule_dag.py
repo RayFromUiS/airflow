@@ -4,7 +4,7 @@ from airflow.operators.dummy_operator import DummyOperator
 from datetime import datetime, timedelta
 
 default_args = {
-    'start_date': datetime(2019, 3, 29, 1),
+    'start_date': datetime(2022, 8, 27, 4),
     'owner': 'Airflow'
 }
 
