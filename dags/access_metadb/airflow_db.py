@@ -12,10 +12,10 @@ def get_dag_ids():
 
 with DAG(
     "connect_dag",
-    start_date=datetime(2019, 1, 1),
+    start_date=datetime(2022, 8, 28),
     max_active_runs=1,
     schedule_interval=None,
-    # catchup=False # enable if you don't want historical dag runs to run
+    catchup=False # enable if you don't want historical dag runs to run
 ) as dag:
 
     t1 = PythonOperator(
