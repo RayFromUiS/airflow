@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 def get_dag_ids():
     postgres_hook = PostgresHook(postgres_conn_id="airflow_db")
     records = postgres_hook.get_records(sql="select dag_id from dag")
-    print(records)
+    print(f'the dag id of this test is record with{records}')
 
 
 with DAG(
